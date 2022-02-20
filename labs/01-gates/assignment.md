@@ -34,9 +34,9 @@ Screenshot of simulation from EdaPlayground:
 
 ### Distributive laws
 
-1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
-
-   ![your figure](Obrazky/edaPlayground.png)
+1. Screenshot with simulated time waveforms.
+ ### Second Distributive law
+   ![your figure](Obrazky/distribucna.png)
 
 2. Link to your public EDA Playground example:
 
