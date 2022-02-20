@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Lab 1: PETER KONDAS
+=======
+# Lab 1: Peter Kondás
+>>>>>>> 5f078e2e8be71090741859a54a45c32b724f24e9
 
 ### De Morgan's laws
 
@@ -38,4 +42,8 @@ end architecture dataflow;
 
 2. Link to your public EDA Playground example:
 
+<<<<<<< HEAD
    [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+=======
+   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+>>>>>>> 5f078e2e8be71090741859a54a45c32b724f24e9
