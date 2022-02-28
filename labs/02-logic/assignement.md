@@ -6,7 +6,7 @@
 
   *Greater than:*
 
-   ![K-Map of Greater Than](images/greater_than.png)
+   ![K-Map of Greater Than](images/Greater_than.png)
 
    *Less than:*
 
