@@ -47,11 +47,9 @@
 ```
 
 2. Text console screenshot during your simulation, including reports.
-## 1.
-*Report of successfull process*
+### 1. *Report of successfull process*
    ![Spravny obrazok](images/spravne.png)
-## 2.
-*Report of failed process*
+### 2. *Report of failed process*
    ![Chybny obrazok](images/chybny.png)
 
 3. Link to your public EDA Playground example:
