@@ -1,0 +1,6 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_comparator_2bit/p_stimulus  File: D:/Documents/xkonda01/digital-electronics-1/labs/03-vivado/comparator/comparator.srcs/sim_1/new/tb_comparator_4bit.vhd
+Note: Stimulus process finished(Správne)
+Time: 100 ns  Iteration: 0  Process: /tb_comparator_2bit/p_stimulus  File: D:/Documents/xkonda01/digital-electronics-1/labs/03-vivado/comparator/comparator.srcs/sim_1/new/tb_comparator_4bit.vhd
