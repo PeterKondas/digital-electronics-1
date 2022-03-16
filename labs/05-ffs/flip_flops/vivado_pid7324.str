@@ -1,0 +1,917 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 7324
+License: Customer
+
+Current time: 	Wed Mar 16 09:57:30 CET 2022
+Time zone: 	Central European Standard Time (Europe/Prague)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/APPZ/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/APPZ/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	student
+User home directory: C:/Users/newDefaultTest
+User working directory: D:/Documents/xkonda01/flip_flops
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/APPZ/Xilinx/Vivado
+HDI_APPROOT: C:/APPZ/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/APPZ/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/APPZ/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/newDefaultTest/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/newDefaultTest/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/newDefaultTest/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/APPZ/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Documents/xkonda01/flip_flops/vivado.log
+Vivado journal file location: 	D:/Documents/xkonda01/flip_flops/vivado.jou
+Engine tmp dir: 	D:/Documents/xkonda01/flip_flops/.Xil/Vivado-7324-PC-625
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/APPZ/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/APPZ/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/APPZ/Xilinx/Vivado/2020.1
+XILINX_VIVADO: C:/APPZ/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/APPZ/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	222 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,012 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: D:\Documents\xkonda01\flip_flops\flip_flops.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/Documents/xkonda01/flip_flops/flip_flops.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/Documents/xkonda01/flip_flops/flip_flops.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 114 MB (+117194kb) [00:00:08]
+// [Engine Memory]: 1,012 MB (+909875kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  2999 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APPZ/Xilinx/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,012 MB. GUI used memory: 61 MB. Current time: 3/16/22, 9:57:30 AM CET
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1022.531 ; gain = 0.000 
+// Project name: flip_flops; location: D:/Documents/xkonda01/flip_flops; part: xc7a50ticsg324-1L
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  2355 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, t_ff_rst(Behavioral) (t_ff_rst.vhd)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, t_ff_rst(Behavioral) (t_ff_rst.vhd)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+// [GUI Memory]: 129 MB (+9712kb) [00:00:23]
+// WARNING: HEventQueue.dispatchEvent() is taking  1004 ms.
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, d_ff_rst.vhd]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, d_ff_rst.vhd]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 82 seconds
+selectCodeEditor("d_ff_rst.vhd", 79, 315); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 188, 300); // bP (w, cs)
+// Elapsed time: 37 seconds
+selectCodeEditor("d_ff_rst.vhd", 227, 366); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 34, 351); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 141, 435); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 185, 432); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 80, 430); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 178, 437); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 181, 437); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 168, 446); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("d_ff_rst.vhd", 145, 407); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 64, 266); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 80, 264); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 91, 493); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 39, 283); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 195, 389); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 39, 237); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("d_ff_rst.vhd", 29, 152); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("d_ff_rst.vhd", 42, 313); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 81, 399); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 90, 316); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 89, 316); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cs) - Node
+// [GUI Memory]: 137 MB (+1480kb) [00:04:30]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, d_ff_rst.vhd]", 2, false); // B (F, cs)
+selectCodeEditor("d_ff_rst.vhd", 46, 205); // bP (w, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 7, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 7, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, d_ff_rst.vhd]", 8, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, d_ff_rst.vhd]", 8, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, d_ff_rst.vhd]", 8, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, d_ff_rst.vhd]", 8, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, d_ff_rst.vhd]", 8, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, d_ff_rst.vhd]", 8, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, d_ff_rst.vhd]", 8, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, t_ff_rst(Behavioral) (t_ff_rst.vhd)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, t_ff_rst(Behavioral) (t_ff_rst.vhd)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, t_ff_rst(Behavioral) (t_ff_rst.vhd)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cs): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bz (cs):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// f (cs): Launch Runs: addNotify
+dismissDialog("Save Project"); // am (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Mar 16 10:02:16 2022] Launched synth_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Completed: addNotify
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 147 MB (+2888kb) [00:05:29]
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Wed Mar 16 10:02:48 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 24 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // af (cs)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cs)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cs)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Implementation Completed: addNotify
+// Elapsed time: 28 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ag)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Mar 16 10:03:47 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // af (cs)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN, "Open Elaborated Design"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cs): Elaborate Design: addNotify
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+// 'dZ' command handler elapsed time: 10 seconds
+dismissDialog("Elaborate Design"); // A (cs)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cs)
+// bz (cs):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bz (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // af (cs)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (cs)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (cs)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN, "Open Elaborated Design"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cs): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bz (cs):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cs)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a50ticsg324-1L Top: t_ff_rst 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,198 MB. GUI used memory: 86 MB. Current time: 3/16/22, 10:04:14 AM CET
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,365 MB. GUI used memory: 86 MB. Current time: 3/16/22, 10:04:22 AM CET
+// [Engine Memory]: 1,378 MB (+330967kb) [00:07:03]
+// Xgd.load filename: C:/APPZ/Xilinx/Vivado/2020.1/data/parts/xilinx/artix7/devint/artix7/xc7a50t/xc7a50t.xgd; ZipEntry: xc7a50t_detail.xgd elapsed time: 0.6s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.6s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,460 MB (+13411kb) [00:07:05]
+// [GUI Memory]: 158 MB (+3886kb) [00:07:05]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1517 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a50ticsg324-1L 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1332.363 ; gain = 241.043 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 't_ff_rst' [D:/Documents/xkonda01/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd:42] INFO: [Synth 8-256] done synthesizing module 't_ff_rst' (1#1) [D:/Documents/xkonda01/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd:42] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1382.121 ; gain = 290.801 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1382.121 ; gain = 290.801 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1382.121 ; gain = 290.801 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1382.121 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1429.977 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1467.180 ; gain = 375.859 
+// Tcl Message: 6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1467.180 ; gain = 444.648 
+// [GUI Memory]: 169 MB (+3559kb) [00:07:06]
+// 'dZ' command handler elapsed time: 15 seconds
+// Elapsed time: 14 seconds
+dismissDialog("Open Elaborated Design"); // bz (cs)
+// PAPropertyPanels.initPanels (q_reg (RTL_REG_SYNC__BREG_1)) elapsed time: 0.2s
+// Elapsed time: 99 seconds
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC, "5 I/O Ports"); // h (g, cs)
+// Elapsed time: 23 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // af (cs)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (cs)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Mar 16 10:06:33 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ff_rst(testbench) (tb_ff_rst.vhd)]", 6, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ff_rst(testbench) (tb_ff_rst.vhd)]", 6, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ff_rst(testbench) (tb_ff_rst.vhd)]", 6, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ff_rst(testbench) (tb_ff_rst.vhd)]", 6, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ff_rst(testbench) (tb_ff_rst.vhd)]", 6, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "Cancel"); // JButton (v, B)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_MODIFY
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Mar 16 10:06:58 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 178 MB (+755kb) [00:09:41]
+// TclEventType: RUN_STATUS_CHANGE
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cs)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cs):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Mar 16 10:07:12 2022] Launched synth_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Completed: addNotify
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ag)
+dismissDialog("Synthesis Completed"); // ag (cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("tb_ff_rst.vhd", 152, 275); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 134, 297); // bP (w, cs)
+typeControlKey((HResource) null, "tb_ff_rst.vhd", 'v'); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 133, 278); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 120, 304); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 159, 313); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 129, 416); // bP (w, cs)
+typeControlKey((HResource) null, "tb_ff_rst.vhd", 'v'); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 274, 439); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 51, 449); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 41, 456); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 181, 315); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 90, 278); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("tb_ff_rst.vhd", 23, 109); // bP (w, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cs): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bz (cs):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Mar 16 10:08:47 2022] Launched synth_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Completed: addNotify
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Wed Mar 16 10:09:19 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Implementation Completed: addNotify
+// Elapsed time: 56 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ag)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Mar 16 10:10:17 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Bitstream Generation Failed: addNotify
+// Elapsed time: 28 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag (cs)
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// [GUI Memory]: 191 MB (+4195kb) [00:14:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,492 MB. GUI used memory: 122 MB. Current time: 3/16/22, 10:11:24 AM CET
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // af (cs)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // af (cs)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectCodeEditor("tb_ff_rst.vhd", 279, 161); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "d_ff_rst.vhd", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "t_ff_rst.vhd", 1); // m (l, cs)
+// Elapsed time: 22 seconds
+selectCodeEditor("t_ff_rst.vhd", 48, 302); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "d_ff_rst.vhd", 2); // m (l, cs)
+selectCodeEditor("d_ff_rst.vhd", 219, 439); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("d_ff_rst.vhd", 204, 367); // bP (w, cs)
+typeControlKey((HResource) null, "d_ff_rst.vhd", 'v'); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 186, 391); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 216, 416); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 214, 400); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 167, 434); // bP (w, cs)
+typeControlKey((HResource) null, "d_ff_rst.vhd", 'c'); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 135, 414); // bP (w, cs)
+typeControlKey((HResource) null, "d_ff_rst.vhd", 'v'); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 142, 415); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 125, 416); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 189, 432); // bP (w, cs)
+typeControlKey((HResource) null, "d_ff_rst.vhd", 'c'); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 129, 416); // bP (w, cs)
+typeControlKey((HResource) null, "d_ff_rst.vhd", 'v'); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 181, 419); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 131, 389); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 168, 369); // bP (w, cs)
+// Elapsed time: 19 seconds
+selectCodeEditor("d_ff_rst.vhd", 197, 353); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 276, 191); // bP (w, cs)
+typeControlKey((HResource) null, "d_ff_rst.vhd", 'v'); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 154, 352); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 141, 362); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 128, 397); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 112, 398); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 238, 397); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 260, 404); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 260, 404); // bP (w, cs)
+selectCodeEditor("d_ff_rst.vhd", 231, 488); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "t_ff_rst.vhd", 1); // m (l, cs)
+// Elapsed time: 20 seconds
+selectCodeEditor("t_ff_rst.vhd", 249, 382); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_ff_rst.vhd", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "t_ff_rst.vhd", 1); // m (l, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("t_ff_rst.vhd", 220, 398); // bP (w, cs)
+typeControlKey((HResource) null, "t_ff_rst.vhd", 'v'); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("t_ff_rst.vhd", 78, 442); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 82, 417); // bP (w, cs)
+typeControlKey((HResource) null, "t_ff_rst.vhd", 'v'); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 204, 472); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 190, 472); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("t_ff_rst.vhd", 164, 432); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 199, 436); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 214, 435); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 212, 435); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 222, 394); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 133, 455); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 141, 457); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 193, 469); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 145, 482); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 127, 442); // bP (w, cs)
+// Elapsed time: 45 seconds
+selectCodeEditor("t_ff_rst.vhd", 184, 448); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("t_ff_rst.vhd", 84, 486); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 145, 488); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 141, 488); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 146, 495); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 85, 480); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 198, 469); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 194, 466); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "d_ff_rst.vhd", 2); // m (l, cs)
+selectCodeEditor("d_ff_rst.vhd", 178, 408); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_ff_rst.vhd", 3); // m (l, cs)
+// Elapsed time: 33 seconds
+selectCodeEditor("tb_ff_rst.vhd", 2, 422); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 2, 419); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 103, 428); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 141, 417); // bP (w, cs)
+selectCodeEditor("tb_ff_rst.vhd", 160, 417); // bP (w, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 17, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cs): Save Project: addNotify
+dismissDialog("Save Project"); // am (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cs): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bz (cs):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Mar 16 10:18:01 2022] Launched synth_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Failed: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-69] Command failed: Vivado Synthesis failed. ]", 2, false); // ah (J, cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-69] Command failed: Vivado Synthesis failed. ]", 2, false, false, false, false, false, true); // ah (J, cs) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ff_rst(testbench) (tb_ff_rst.vhd)]", 6, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ff_rst(testbench) (tb_ff_rst.vhd)]", 6, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ff_rst(testbench) (tb_ff_rst.vhd), uut_d_ff_rst : d_ff_rst(Behavioral) (d_ff_rst.vhd)]", 7, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_ff_rst(testbench) (tb_ff_rst.vhd), uut_d_ff_rst : d_ff_rst(Behavioral) (d_ff_rst.vhd)]", 7, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, t_ff_rst(Behavioral) (t_ff_rst.vhd)]", 8, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, t_ff_rst(Behavioral) (t_ff_rst.vhd)]", 8, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1779] cannot read from 'out' object q ; use 'buffer' or 'inout' [D:/Documents/xkonda01/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd:54]. ]", 1, false); // ah (J, cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1779] cannot read from 'out' object q ; use 'buffer' or 'inout' [D:/Documents/xkonda01/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd:54]. ]", 1, false, false, false, false, false, true); // ah (J, cs) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1779] cannot read from 'out' object q ; use 'buffer' or 'inout' [D:/Documents/xkonda01/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd:54]. ]", 1, false); // ah (J, cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1779] cannot read from 'out' object q ; use 'buffer' or 'inout' [D:/Documents/xkonda01/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd:54]. ]", 1, false); // ah (J, cs)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\Documents\xkonda01\flip_flops\flip_flops.srcs\sources_1\new\t_ff_rst.vhd;-;;-;16;-;line;-;54;-;;-;16;-;"); // ah (J, cs)
+selectCodeEditor("t_ff_rst.vhd", 98, 419); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 133, 396); // bP (w, cs)
+typeControlKey((HResource) null, "t_ff_rst.vhd", 'c'); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 96, 418); // bP (w, cs)
+typeControlKey((HResource) null, "t_ff_rst.vhd", 'v'); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("t_ff_rst.vhd", 112, 417); // bP (w, cs)
+typeControlKey((HResource) null, "t_ff_rst.vhd", 'v'); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 249, 402); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 208, 414); // bP (w, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cs): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bz (cs):  Save Constraints : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Mar 16 10:19:24 2022] Launched synth_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("t_ff_rst.vhd", 305, 171); // bP (w, cs)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Completed: addNotify
+// Elapsed time: 23 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Wed Mar 16 10:20:07 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 32 seconds
+selectCodeEditor("t_ff_rst.vhd", 247, 127); // bP (w, cs)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Implementation Completed: addNotify
+// Elapsed time: 20 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ag)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Mar 16 10:21:01 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Bitstream Generation Failed: addNotify
+// Elapsed time: 29 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag (cs)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL (aI, cs)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; write_bitstream ERROR ; NA ; NA ; NA ; NA ; NA ; 0.058537088334560394 ; 0 ; 0 ; 0 ; 0.0 ; 0 ; 0 ; Wed Mar 16 10:20:17 CET 2022 ; 00:00:47 ; Vivado Implementation Defaults (Vivado Implementation 2020) ; Vivado Implementation Default Reports (Vivado Implementation 2020) ; xc7a50ticsg324-1L ; Default settings for Implementation.", 1, "impl_1", 0, false); // az (J, cs)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; write_bitstream ERROR ; NA ; NA ; NA ; NA ; NA ; 0.058537088334560394 ; 0 ; 0 ; 0 ; 0.0 ; 0 ; 0 ; Wed Mar 16 10:20:17 CET 2022 ; 00:00:47 ; Vivado Implementation Defaults (Vivado Implementation 2020) ; Vivado Implementation Default Reports (Vivado Implementation 2020) ; xc7a50ticsg324-1L ; Default settings for Implementation.", 1, "impl_1", 0, false, false, false, false, false, true); // az (J, cs) - Double Click
+// bz (cs):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,527 MB. GUI used memory: 127 MB. Current time: 3/16/22, 10:21:43 AM CET
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,569 MB (+38031kb) [00:24:25]
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  2174 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1553.605 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1584.000 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1584.000 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1584.137 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0,0
+// [Engine Memory]: 1,671 MB (+23728kb) [00:24:27]
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 1,802 MB (+49961kb) [00:24:29]
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bz)
+dismissDialog("Open Implemented Design"); // bz (cs)
+closeFrame(PAResourceOtoP.PAViews_NETLIST, "Netlist"); // aA (aL, cs)
+selectTab((HResource) null, (HResource) null, "Power", 6); // aL (aI, cs)
+// [Engine Memory]: 2,065 MB (+180986kb) [00:24:35]
+selectTab((HResource) null, (HResource) null, "DRC", 5); // aL (aI, cs)
+// RouteApi::initDelayMediator elapsed time: 8.6s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 2,271 MB (+108652kb) [00:24:35]
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL (aI, cs)
+closeFrame(PAResourceOtoP.PAViews_DESIGN_RUNS, "Design Runs"); // aA (aL, cs)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aL (aI, cs)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aL (aI, cs)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aL (aI, cs)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cs)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream]", 1); // ah (J, cs)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream]", 1); // ah (J, cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Pin Planning, [DRC NSTD-1] Unspecified I/O Standard: 2 out of 2 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: q, and q_bar.. ]", 4, false); // ah (J, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,337 MB. GUI used memory: 141 MB. Current time: 3/16/22, 10:22:14 AM CET
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.. ]", 6, false); // ah (J, cs)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (cs): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset and Re-run"); // i (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Wed Mar 16 10:22:32 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "t_ff_rst.vhd", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m (l, cs)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Implementation Completed: addNotify
+// Elapsed time: 43 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ag)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Mar 16 10:23:28 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 203 MB (+2631kb) [00:26:13]
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "t_ff_rst.vhd", 1); // m (l, cs)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "d_ff_rst.vhd", 2); // m (l, cs)
+// ag (cs): Bitstream Generation Failed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ag)
+dismissDialog("Bitstream Generation Failed"); // ag (cs)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aL (aI, cs)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "t_ff_rst.vhd", 1); // m (l, cs)
+// Elapsed time: 38 seconds
+selectCodeEditor("t_ff_rst.vhd", 175, 295, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectCodeEditor("t_ff_rst.vhd", 138, 260); // bP (w, cs)
+// Elapsed time: 222 seconds
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (ds, cs)
+// TclEventType: DESIGN_CLOSE
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,337 MB. GUI used memory: 135 MB. Current time: 3/16/22, 10:28:39 AM CET
+// Engine heap size: 2,337 MB. GUI used memory: 136 MB. Current time: 3/16/22, 10:28:40 AM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1916 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// bz (cs):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bz (cs)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (ds, cs)
+// bz (cs):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2639.848 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.3s
+// Engine heap size: 2,337 MB. GUI used memory: 106 MB. Current time: 3/16/22, 10:28:49 AM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1850 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,337 MB. GUI used memory: 106 MB. Current time: 3/16/22, 10:28:49 AM CET
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 't_ff_rst' [D:/Documents/xkonda01/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd:42] INFO: [Synth 8-256] done synthesizing module 't_ff_rst' (1#1) [D:/Documents/xkonda01/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd:42] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2639.848 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2639.848 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2639.848 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,337 MB. GUI used memory: 103 MB. Current time: 3/16/22, 10:28:50 AM CET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  2392 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2639.848 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2639.848 ; gain = 0.000 
+// Elapsed time: 10 seconds
+dismissDialog("Reloading"); // bz (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 35, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Mar 16 10:29:01 2022] Launched impl_1... Run output will be captured here: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 19 seconds
+selectCodeEditor("t_ff_rst.vhd", 120, 369); // bP (w, cs)
+selectCodeEditor("t_ff_rst.vhd", 123, 369, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("t_ff_rst.vhd", 123, 369); // bP (w, cs)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Bitstream Generation Failed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag (cs)
