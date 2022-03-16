@@ -22,6 +22,6 @@
    | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
    | ![rising](images/eq_uparrow.png) | 0 | 0 | 0 | Output did not change |
-   | ![rising](images/eq_uparrow.png) | 0 | 1 |  | did not change |
+   | ![rising](images/eq_uparrow.png) | 0 | 1 | 1 | did not change |
    | ![rising](images/eq_uparrow.png) | 1 | 0 | 1 | invert |
    | ![rising](images/eq_uparrow.png) | 1 | 1 | 0 | invert |
