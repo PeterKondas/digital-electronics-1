@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar 18 14:33:15 2022
+# Process ID: 25164
+# Current directory: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.runs/impl_1
+# Command line: vivado.exe -log t_ff_rst.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source t_ff_rst.tcl -notrace
+# Log file: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.runs/impl_1/t_ff_rst.vdi
+# Journal file: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source t_ff_rst.tcl -notrace

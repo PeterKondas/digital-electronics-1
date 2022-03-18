@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1647422552">
+<GenRun Id="impl_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1647610387">
   <File Type="BITSTR-BMM" Name="t_ff_rst_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="t_ff_rst_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="t_ff_rst_timing_summary_init.rpt"/>
@@ -75,7 +75,7 @@
   <File Type="BG-DRC" Name="t_ff_rst.drc"/>
   <File Type="RDI-RDI" Name="t_ff_rst.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/t_ff_rst.vhd">
       <FileInfo>
@@ -109,7 +109,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

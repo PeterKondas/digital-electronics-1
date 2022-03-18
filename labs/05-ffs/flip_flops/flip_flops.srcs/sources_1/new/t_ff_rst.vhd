@@ -45,15 +45,14 @@ begin
     p_t_ff_rst : process(clk)
     begin
         if rising_edge(clk) then  -- Synchronous process
-            if(rst='1') then 
-               q  <= '0';
-            q_bar <= '1';
+            if(rst='1') then    
             s_q <= '0';
+             else  if (t= '0') then
+             s_q <= s_q;
              else
-           s_q   <=  (t and s_q);
-           q  <= s_q ;
-           q_bar <= not s_q;
+          s_q <= not s_q;
            end if;   
+        end if;
         end if;
     end process p_t_ff_rst;
 end architecture Behavioral;

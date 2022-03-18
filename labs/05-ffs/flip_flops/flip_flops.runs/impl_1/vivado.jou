@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2020.1 (64-bit)
-# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Mar 16 10:29:14 2022
-# Process ID: 8740
-# Current directory: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar 18 14:35:00 2022
+# Process ID: 25632
+# Current directory: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.runs/impl_1
 # Command line: vivado.exe -log t_ff_rst.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source t_ff_rst.tcl -notrace
-# Log file: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/t_ff_rst.vdi
-# Journal file: D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1\vivado.jou
+# Log file: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.runs/impl_1/t_ff_rst.vdi
+# Journal file: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source t_ff_rst.tcl -notrace

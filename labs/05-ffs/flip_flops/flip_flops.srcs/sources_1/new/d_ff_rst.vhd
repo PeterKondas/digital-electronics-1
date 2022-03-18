@@ -40,7 +40,6 @@ entity d_ff_rst is
 end d_ff_rst;
 
 architecture Behavioral of d_ff_rst is
- signal s_q : std_logic;
 begin 
     --------------------------------------------------------
     -- p_d_ff_rst:
@@ -51,13 +50,14 @@ begin
     p_d_ff_rst : process(clk)
    
     begin
+    if rising_edge(clk) then
             if(rst='1') then  
-            s_q             <='0' ; --nove
                 q       <= '0';
                 q_bar   <= '1';
             else
                 q    <= d;
                 q_bar <= not d;
-        end if;
+             end if;
+            end if;
     end process p_d_ff_rst;
 end architecture Behavioral;

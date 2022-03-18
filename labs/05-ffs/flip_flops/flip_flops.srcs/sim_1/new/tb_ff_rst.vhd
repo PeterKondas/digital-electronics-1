@@ -21,6 +21,8 @@ architecture testbench of tb_ff_rst is
     signal s_data       : std_logic;
     signal s_d_q        : std_logic;
     signal s_d_q_bar    : std_logic;
+    signal s_t_q        : std_logic;
+    signal s_t_q_bar    : std_logic;
 
 begin
     -- Connecting testbench signals with d_ff_rst entity
@@ -33,7 +35,14 @@ begin
             q     => s_d_q,
             q_bar => s_d_q_bar
         );
-
+uut_t_ff_rst : entity work.t_ff_rst
+        port map(
+            clk   => s_clk_100MHz,
+            rst   => s_rst,
+            t     => s_data,
+            q     => s_t_q,
+            q_bar => s_t_q_bar
+        );
     --------------------------------------------------------
     -- Clock generation process
     --------------------------------------------------------
@@ -53,15 +62,14 @@ begin
     --------------------------------------------------------
     p_reset_gen : process
     begin
-        s_rst <= '1';
-wait for 20 ns;
         s_rst <= '0';
-        -- ACTIVATE AND DEACTIVATE RESET HERE
-        -- wait for XXX ns;
-        -- s_rst <= XXX;
-        -- wait for XXX ns;
-        -- s_rst <= XXX;
-
+         wait for 20 ns;
+        s_rst <= '1';
+        wait for 18 ns;
+        s_rst <= '0';
+         wait for 36 ns;
+        s_rst <= '1';
+        wait for 56 ns;
         wait;
     end process p_reset_gen;
 
@@ -72,11 +80,12 @@ wait for 20 ns;
     begin
         report "Stimulus process started" severity note;
         s_data <='0'; wait for 13 ns;
-        s_data <='1';
-      
-
+        s_data <='1'; wait for 25 ns;
+        s_data <='0'; wait for 20 ns;
+        s_data <='1'; wait for 15 ns;
+        s_data <='0'; wait for 62 ns;
+        s_data <='1'; wait for 84 ns;
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
-
 end architecture testbench;

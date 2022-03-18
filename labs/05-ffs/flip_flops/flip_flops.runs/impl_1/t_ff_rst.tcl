@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/Documents/xkonda01/flip_flops/flip_flops.runs/impl_1/t_ff_rst.tcl"
+  variable script "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.runs/impl_1/t_ff_rst.tcl"
   variable category "vivado_impl"
 }
 
@@ -112,26 +112,24 @@ proc step_failed { step } {
   set endFile ".$step.error.rst"
   set ch [open $endFile w]
   close $ch
+OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
-OPTRACE "Implementation" START { ROLLUP_1 }
+OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
 OPTRACE "write_bitstream setup" START { }
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 1
-  set_param synth.incrementalSynthesisCache D:/Documents/xkonda01/flip_flops/.Xil/Vivado-7324-PC-625/incrSyn
+  set_param chipscope.maxJobs 2
   open_checkpoint t_ff_rst_routed.dcp
-  set_property webtalk.parent_dir D:/Documents/xkonda01/flip_flops/flip_flops.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.cache/wt [current_project]
 set_property TOP t_ff_rst [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  catch { write_mem_info -force t_ff_rst.mmi }
+  catch { write_mem_info -force -no_partial_mmi t_ff_rst.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
   write_bitstream -force t_ff_rst.bit 
@@ -153,4 +151,4 @@ if {$rc} {
 
 OPTRACE "write_bitstream misc" END { }
 OPTRACE "Phase: Write Bitstream" END { }
-OPTRACE "Implementation" END { }
+OPTRACE "impl_1" END { }
