@@ -21,10 +21,10 @@ begin
                 q       <= '0';
                 q_bar   <= '1';
             else
-                q    <= d;
+                q     <= d;
                 q_bar <= not d;
-             end if;
             end if;
+    end if;
     end process p_d_ff_rst;
 end architecture Behavioral;
 ```
@@ -37,4 +37,4 @@ end architecture Behavioral;
 
 1. Image of the shift register `top` level schematic. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components and internal signals!
 
-   ![your figure]()
+   ![Nakres](pictures/nakres.png)

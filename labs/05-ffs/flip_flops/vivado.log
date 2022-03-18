@@ -406,3 +406,5 @@ INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ff_rst_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 200ns
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 18 14:49:35 2022...
