@@ -10,3 +10,37 @@
 # Journal file: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_ff_rst.tcl
+close_sim
+launch_simulation
+source tb_ff_rst.tcl
+close_sim
+launch_simulation
+source tb_ff_rst.tcl
+set_property -name {xsim.simulate.runtime} -value {200ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source tb_ff_rst.tcl
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation
+source tb_ff_rst.tcl
+add_bp {C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd} 89
+remove_bps -file {C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd} -line 89
+add_bp {C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd} 89
+remove_bps -file {C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd} -line 89
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim
+launch_simulation
+source tb_ff_rst.tcl
+close_sim

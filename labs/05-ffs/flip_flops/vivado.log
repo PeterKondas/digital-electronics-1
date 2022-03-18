@@ -10,3 +10,399 @@
 # Journal file: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Documents/xkonda01/flip_flops' since last save.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.ip_user_files', nor could it be found using path 'D:/Documents/xkonda01/flip_flops/flip_flops.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys-a7-50t:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [Project 1-230] Project 'flip_flops.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 980.082 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ff_rst' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_ff_rst_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sources_1/new/d_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'd_ff_rst'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 't_ff_rst'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_ff_rst'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 980.082 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xelab -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.d_ff_rst [d_ff_rst_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_ff_rst [t_ff_rst_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_ff_rst
+Built simulation snapshot tb_ff_rst_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim/xsim.dir/tb_ff_rst_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim/xsim.dir/tb_ff_rst_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Mar 18 13:57:55 2022. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 18 13:57:55 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 980.082 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ff_rst_behav -key {Behavioral:sim_1:Functional:tb_ff_rst} -tclbatch {tb_ff_rst.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_ff_rst.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd
+Note: Stimulus process finished
+Time: 219 ns  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ff_rst_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 980.082 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 980.082 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ff_rst' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_ff_rst_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_ff_rst'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xelab -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.d_ff_rst [d_ff_rst_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_ff_rst [t_ff_rst_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_ff_rst
+Built simulation snapshot tb_ff_rst_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ff_rst_behav -key {Behavioral:sim_1:Functional:tb_ff_rst} -tclbatch {tb_ff_rst.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_ff_rst.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd
+Note: Stimulus process finished
+Time: 219 ns  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ff_rst_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 980.082 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ff_rst' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_ff_rst_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_ff_rst'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xelab -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.d_ff_rst [d_ff_rst_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_ff_rst [t_ff_rst_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_ff_rst
+Built simulation snapshot tb_ff_rst_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ff_rst_behav -key {Behavioral:sim_1:Functional:tb_ff_rst} -tclbatch {tb_ff_rst.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_ff_rst.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd
+Note: Stimulus process finished
+Time: 219 ns  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ff_rst_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1009.992 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {200ns} -objects [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\pepoo\Documents\PetoGit\digital-electronics-1\labs\05-ffs\flip_flops\flip_flops.srcs\sources_1\new\d_ff_rst.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\pepoo\Documents\PetoGit\digital-electronics-1\labs\05-ffs\flip_flops\flip_flops.srcs\sim_1\new\tb_ff_rst.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\pepoo\Documents\PetoGit\digital-electronics-1\labs\05-ffs\flip_flops\flip_flops.srcs\sources_1\new\t_ff_rst.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\pepoo\Documents\PetoGit\digital-electronics-1\labs\05-ffs\flip_flops\flip_flops.srcs\sources_1\new\d_ff_rst.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\pepoo\Documents\PetoGit\digital-electronics-1\labs\05-ffs\flip_flops\flip_flops.srcs\sim_1\new\tb_ff_rst.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\pepoo\Documents\PetoGit\digital-electronics-1\labs\05-ffs\flip_flops\flip_flops.srcs\sources_1\new\t_ff_rst.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ff_rst' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_ff_rst_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xelab -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ff_rst_behav -key {Behavioral:sim_1:Functional:tb_ff_rst} -tclbatch {tb_ff_rst.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_ff_rst.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ff_rst_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Mar 18 14:32:30 2022] Launched synth_1...
+Run output will be captured here: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Mar 18 14:33:07 2022] Launched impl_1...
+Run output will be captured here: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ff_rst' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_ff_rst_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 't_ff_rst'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_ff_rst'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xelab -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.d_ff_rst [d_ff_rst_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_ff_rst [t_ff_rst_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_ff_rst
+Built simulation snapshot tb_ff_rst_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ff_rst_behav -key {Behavioral:sim_1:Functional:tb_ff_rst} -tclbatch {tb_ff_rst.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_ff_rst.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ff_rst_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1009.992 ; gain = 0.000
+add_bp {C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd} 89
+remove_bps -file {C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd} -line 89
+add_bp {C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd} 89
+remove_bps -file {C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd} -line 89
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 18 14:34:48 2022] Launched impl_1...
+Run output will be captured here: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ff_rst' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_ff_rst_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sources_1/new/d_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'd_ff_rst'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_ff_rst'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+"xelab -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e8744d1f66234485a0fac4a047e0a1aa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_ff_rst_behav xil_defaultlib.tb_ff_rst -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.d_ff_rst [d_ff_rst_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_ff_rst [t_ff_rst_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_ff_rst
+Built simulation snapshot tb_ff_rst_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ff_rst_behav -key {Behavioral:sim_1:Functional:tb_ff_rst} -tclbatch {tb_ff_rst.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_ff_rst.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ff_rst_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
