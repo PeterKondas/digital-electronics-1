@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar 29 21:29:54 2022
+# Process ID: 23244
+# Current directory: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/06-counter/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7244 C:\Users\pepoo\Documents\PetoGit\digital-electronics-1\labs\06-counter\project_1\project_1.xpr
+# Log file: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/06-counter/project_1/vivado.log
+# Journal file: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/06-counter/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/06-counter/project_1/project_1.xpr
+launch_simulation
+source tb_cnt_up_down.tcl
+close_sim
