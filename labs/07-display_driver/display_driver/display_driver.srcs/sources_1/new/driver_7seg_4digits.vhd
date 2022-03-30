@@ -58,7 +58,7 @@ end entity driver_7seg_4digits;
 ------------------------------------------------------------
 -- Architecture declaration for display driver
 ------------------------------------------------------------
-architecture Behavioral of driver_7seg_4digits is
+architecture Behavioral of driv_7seg_4digits is
 
     -- Internal clock enable
     signal s_en  : std_logic;
@@ -128,13 +128,19 @@ begin
                         dig_o <= "0111";
 
                     when "10" =>
-                        -- DEFINE ALL OUTPUTS FOR "10" HERE
+                        s_hex <= data2_i;
+                        dp_o  <= dp_i(2);
+                        dig_o <= "1011";
 
                     when "01" =>
-                        -- DEFINE ALL OUTPUTS FOR "01" HERE
+                        s_hex <= data1_i;
+                        dp_o  <= dp_i(1);
+                        dig_o <= "1101";
 
                     when others =>
-                        -- DEFINE ALL OUTPUTS FOR "00" HERE
+                        s_hex <= data0_i;
+                        dp_o  <= dp_i(4);
+                        dig_o <= "1110";
                 end case;
             end if;
         end if;
