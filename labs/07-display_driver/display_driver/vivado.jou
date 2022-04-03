@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr  3 15:17:26 2022
+# Process ID: 18748
+# Current directory: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/07-display_driver/display_driver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6352 C:\Users\pepoo\Documents\PetoGit\digital-electronics-1\labs\07-display_driver\display_driver\display_driver.xpr
+# Log file: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/07-display_driver/display_driver/vivado.log
+# Journal file: C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/07-display_driver/display_driver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/07-display_driver/display_driver/display_driver.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
+reset_property board_connections [get_projects display_driver]
+undo
+undo
+set_property part xc7a50ticpg236-1L [current_project]
+undo
+launch_simulation
+source clock_enable.tcl
+close_sim
+file mkdir C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/07-display_driver/display_driver/display_driver.srcs/constrs_1
+file mkdir C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/07-display_driver/display_driver/display_driver.srcs/constrs_1/new
+close [ open C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/07-display_driver/display_driver/display_driver.srcs/constrs_1/new/nexys-a7-50t.xdc w ]
+add_files -fileset constrs_1 C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/07-display_driver/display_driver/display_driver.srcs/constrs_1/new/nexys-a7-50t.xdc
+add_files -norecurse C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/07-display_driver/display_driver/display_driver.srcs/sources_1/new/driver_7seg_4digits.vhd
+add_files -norecurse C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/labs/07-display_driver/display_driver/display_driver.srcs/sources_1/new/driver_7seg_4digits.vhd

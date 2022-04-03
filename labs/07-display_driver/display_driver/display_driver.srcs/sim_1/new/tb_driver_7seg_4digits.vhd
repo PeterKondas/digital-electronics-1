@@ -80,11 +80,12 @@ begin
     
    p_stimulus : process
 begin
-a_data3 <= x"3";
-a_data2 <= x"1";
-a_data1 <= x"4";
-a_data0 <= x"2";
-a_dpin  <= x"0111";
+report "Stimulus process started" severity note;
+s_data3 <= "0011";
+s_data2 <= "0001";
+s_data1 <= "0100";
+s_data0 <= "0010";
+s_dpin  <= "0111";
 report "Stimulus process finished" severity note;
 wait;
 end process p_stimulus;
