@@ -53,4 +53,4 @@
 
 1. Image of the 8-digit driver's block schematic.  
 
-   ![Schematic](obrazky/schematic.png)
+   ![Schematic](obrazky/schematicFinal.png)
