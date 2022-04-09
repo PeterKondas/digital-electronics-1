@@ -4,7 +4,7 @@
 
 1. Figure of traffic light controller state diagram. The image can be drawn on a computer or by hand. Always name all states, transitions, and input signals!
 
-   ![your figure]()
+   ![your figure](obrazky/kresba.png)
 
 2. Listing of VHDL code of the completed process `p_traffic_fsm`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
@@ -45,7 +45,7 @@
                         -- WRITE OTHER STATES HERE
 
                         if (s_cnt < c_DELAY_4SEC) then
-                            s_cnt <= s_cnt + 4;
+                            s_cnt <= s_cnt + 1;
                         else
                             -- Move to the next state
                             s_state <= WEST_WAIT;
@@ -54,7 +54,7 @@
                         end if;
                    when WEST_WAIT =>
                         if (s_cnt < c_DELAY_2SEC)then
-                            s_cnt <= s_cnt + 2;
+                            s_cnt <= s_cnt + 1;
                         else
                             -- Move to the next state
                             s_state <= STOP2;
@@ -74,7 +74,7 @@
                         
                  when SOUTH_GO =>
                         if (s_cnt < c_DELAY_4SEC)then
-                            s_cnt <= s_cnt + 4;
+                            s_cnt <= s_cnt + 1;
                         else
                             -- Move to the next state
                             s_state <= SOUTH_WAIT ;
@@ -83,7 +83,7 @@
                         end if;
                 when SOUTH_WAIT =>
                         if (s_cnt < c_DELAY_2SEC)then
-                            s_cnt <= s_cnt + 2;
+                            s_cnt <= s_cnt + 1;
                         else
                             -- Move to the next state
                             s_state <= STOP1;
@@ -101,3 +101,6 @@
         end if; -- Rising edge
     end process p_traffic_fsm;
 ```
+3. Screenshot with simulated time waveforms. The full functionality of the entity must be verified. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
+
+   ![your figure](obrazky/screenshotskola.png)
