@@ -1,0 +1,13 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-3287] entity 'signal_catcher' is not yet compiled [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:34]
+ERROR: [VRFC 10-4982] syntax error near '1' [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:41]
+ERROR: [VRFC 10-3760] type 'unsigned' does not match with the integer literal [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:44]
+ERROR: [VRFC 10-2989] 'generator_signal' is not declared [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:45]
+ERROR: [VRFC 10-275] actual  of formal s must be a signal [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:45]
+ERROR: [VRFC 10-2989] 'hz_clock' is not declared [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:43]
+ERROR: [VRFC 10-275] actual  of formal s must be a signal [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:43]
+ERROR: [VRFC 10-2123] 0 definitions of operator "=" match here [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:43]
+ERROR: [VRFC 10-2922] '"**"' expects 2 arguments [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:43]
+ERROR: [VRFC 10-724] found '0' definitions of operator "or", cannot determine exact overloaded matching definition for "or" [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:43]
+ERROR: [VRFC 10-2989] 'generator_signal' is not declared [C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd:41]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/pepoo/Documents/PetoGit/digital-electronics-1/project_DE1/project_DE1.srcs/sources_1/new/signal_catcher.vhd' ignored due to errors
